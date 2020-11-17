@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#9A0404">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="121dp"
+        android:layout_height="128dp"
+        android:src="@drawable/iccentauro"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+
+
+    <!--Interação com o usario-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:padding="30dp"
+        android:background="@drawable/layoutredondo"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:fontFamily="@font/fugaz_one"
+            android:textColor="#9A0404"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/usuarioLogin"
+            android:inputType="text"
+            android:layout_width="270dp"
+            android:padding="7dp"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_texts"
+            android:hint="Usuario"
+            android:maxLines="1"
+            android:drawablePadding="11dp"
+            android:drawableStart="@drawable/ic_usuario"
+            android:layout_gravity="center"
+            android:textColorHint="#665757"/>
+
+        <EditText
+            android:id="@+id/usuarioSenha"
+            android:layout_width="270dp"
+            android:textSize="27sp"
+            android:padding="7dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:background="@drawable/edit_texts"
+            android:hint="Senha"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#665757"/>
+
+        <TextView
+            android:id="@+id/esqueceuSenha"
+            android:layout_width="179dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="-Esqueceu a senha?-"
+            android:textColor="#AD1313"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonLogar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonlogin"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:text="Logar"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/usuarioNovo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="Novo Usuário? Cadastre-se aqui!"
+            android:textAlignment="center"
+            android:textColor="#AD1313"
+            android:textColorHighlight="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

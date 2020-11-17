@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroActivity"
+    android:orientation="vertical"
+    android:background="#9A0404">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="121dp"
+        android:layout_height="128dp"
+        android:src="@drawable/iccentauro"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+
+
+    <!--Interação com o usario-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="30dp"
+        android:background="@drawable/layoutredondo"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CADASTRE-SE"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:fontFamily="@font/fugaz_one"
+            android:textColor="#9A0404"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/cadastroLogin"
+            android:layout_width="270dp"
+            android:padding="7dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_texts"
+            android:hint="Usuario"
+            android:drawablePadding="11dp"
+            android:drawableStart="@drawable/ic_usuario"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:textColorHint="#665757"/>
+
+        <EditText
+            android:id="@+id/cadastroSenha"
+            android:layout_width="270dp"
+            android:textSize="24sp"
+            android:padding="7dp"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_texts"
+            android:hint="Senha"
+            android:drawablePadding="11dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#665757"/>
+        <EditText
+            android:id="@+id/cadastroconfSenha"
+            android:layout_width="270dp"
+            android:textSize="24sp"
+            android:padding="7dp"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_texts"
+            android:hint="Confirmar Senha"
+            android:drawablePadding="11dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#665757"/>
+
+        <Button
+            android:id="@+id/buttonRegistrar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonlogin"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:text="Registar"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/jaCadastrado"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="Já cadastrado? Faça o login!"
+            android:textAlignment="center"
+            android:textColor="#AD1313"
+            android:textColorHighlight="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
